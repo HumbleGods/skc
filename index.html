@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKC Construction – Your Finish Solution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<canvas id="pcv" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35"></canvas>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo"><span><img src="./uploads/logo/skc2.png" class="loader-img-logo" alt=""> SKC</span> Construction</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">"Your Finish Solution"</div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button id="lb-close"><i class="fas fa-times"></i></button>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="nav-brand navbar-brand" href="#">
+      <img src="./uploads/logo/skc2.png" alt="SKC" class="nav-logo">
+      <div>
+        <div class="nav-brand-title"><span> SKC</span> Construction</div>
+        <div class="nav-brand-sub">"Your Finish Solution"</div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-center gap-1">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#products">Products</a></li>
+        <li><a class="nav-link" href="#features">Services</a></li>
+        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="ms-2"><a class="nav-link nav-cta" href="#contact">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-side-img">
+    <img src="./uploads/logo/bskclogo.png" alt="Construction">
+  </div>
+  <div class="container position-relative" style="z-index:2">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="hero-content">
+          <div class="hero-eyebrow">Philippines Material Supplier</div>
+          <h1 class="hero-title">
+            Building<br>
+            <span class="accent">Strong</span><br>
+            <span class="stroke">Foundations</span>
+          </h1>
+          <p class="hero-sub">construction materials Brickstones, CHB, and Stampcrete, engineered for projects that stand the test of time.</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn-primary-skc"><i class="fas fa-cubes"></i> Explore Products</a>
+            <a href="#contact" class="btn-outline-skc"><i class="fas fa-paper-plane"></i> Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item"><div class="stat-num" data-count="15">0</div><div class="stat-label">Yrs Experience</div></div>
+    <div class="stat-item"><div class="stat-num" data-count="500">0</div><div class="stat-label">Projects Done</div></div>
+    <div class="stat-item"><div class="stat-num" data-count="200">0</div><div class="stat-label">Happy Clients</div></div>
+  </div>
+  <div class="scroll-indicator">
+    <span class="scroll-txt">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal-left">
+        <div class="position-relative">
+          <img src="./uploads/logo/bskclogo.png" alt="SKC Construction" class="about-img">
+          <div class="about-frame"></div>
+          <div class="about-badge">
+            <div class="about-badge-num">15+</div>
+            <div class="about-badge-label">Years of<br>Expertise</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <div class="section-label">About SKC Construction</div>
+        <h2 class="section-title mb-3">We Build More<br>Than <span class="accent">Structures</span></h2>
+        <p class="about-tagline">"Your Finish Solution"</p>
+        <p class="about-body">SKC Construction is a trusted name in the Philippine construction materials industry. We supply premium-grade building materials that contractors, architects, and developers rely on to deliver lasting results.</p>
+        <p class="about-body">From crafted brickstones to structurally sound CHB and decorative stampcrete, every product reflects our commitment to quality and finish that endures.</p>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <div class="pillar"><i class="fas fa-shield-alt"></i> Quality Assured</div>
+          <div class="pillar"><i class="fas fa-truck-fast"></i> On-Time Delivery</div>
+          <div class="pillar"><i class="fas fa-handshake"></i> Trusted Partners</div>
+          <div class="pillar"><i class="fas fa-leaf"></i> Sustainable</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-6 reveal">
+        <div class="section-label">Our Materials</div>
+        <h2 class="section-title">Premium <span class="accent">Product</span><br>Categories</h2>
+        <p style="font-family:var(--font-serif);color:var(--text-3);margin-top:14px;line-height:1.8">Industry-grade materials trusted by professional builders across the Philippines. Hover each card to explore details.</p>
+      </div>
+      <div class="col-lg-6 text-lg-end reveal">
+        <a href="#contact" class="btn-outline-skc">Request Full Catalog <i class="fas fa-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="cat-tabs reveal">
+      <button class="cat-tab active" data-cat="all">All Products</button>
+      <button class="cat-tab" data-cat="masonry">🧱 Pavers</button>
+      <button class="cat-tab" data-cat="concrete">🏗️ Concrete Blocks</button>
+      <button class="cat-tab" data-cat="decorative">✨ Decorative Finishes</button>
+      <button class="cat-tab" data-cat="aggregate">⛏️ Aggregates</button>
+    </div>
+
+    <!-- ALL / MASONRY -->
+    <div class="cat-section active" id="cat-all">
+
+      <!-- MASONRY -->
+      <div class="cat-section-title reveal">🧱 Pavers</div>
+      <div class="cat-divider reveal"></div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.05s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/pavers/brickstone.png" alt="Brickstones" loading="lazy">
+              <span class="product-badge badge-brick">Brickstone</span>
+            </div>
+            <div class="product-num">01</div>
+            <div class="product-body">
+              <div class="product-category-tag">Pavers</div>
+              <div class="product-name">Standard Gray Brick</div>
+              <p class="product-desc">High-fired clay bricks with superior compressive strength. Ideal for residential and commercial wall construction.</p>
+              <div class="product-specs">
+                <span class="spec-chip">190×90×57mm</span>
+                <span class="spec-chip">Class A</span>
+                <span class="spec-chip">PNS Certified</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Starting from</span>₱20 / pc</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/pavers/non-skid.png" alt="Non-Skid Paver" loading="lazy">
+              <span class="product-badge badge-brick">Pavers</span>
+            </div>
+            <div class="product-num">02</div>
+            <div class="product-body">
+              <div class="product-category-tag">Pavers</div>
+              <div class="product-name">Non-Skid Paver</div>
+              <p class="product-desc">Enhanced traction surface for safe walking and driving areas. Ideal for patios, walkways, and parking lots.</p>
+              <div class="product-specs">
+                <span class="spec-chip">190×90×57mm</span>
+                <span class="spec-chip">Class A</span>
+                <span class="spec-chip">Weather-Resistant</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Starting from</span>₱20 / pc</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.15s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/pavers/pervious-paver.png" alt="Pervious Paver" loading="lazy">
+              <span class="product-badge badge-brick">Pavers</span>
+            </div>
+            <div class="product-num">03</div>
+            <div class="product-body">
+              <div class="product-category-tag">Pavers</div>
+              <div class="product-name">Pervious Paver</div>
+              <p class="product-desc">Permeable pavers that allow water to infiltrate, reducing runoff and preventing flooding. Ideal for sustainable landscaping and stormwater management.</p>
+              <div class="product-specs">
+                <span class="spec-chip">190×90×57mm</span>
+                <span class="spec-chip">Class A</span>
+                <span class="spec-chip">Industrial</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Starting from</span>₱20 / pc</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCRETE BLOCKS -->
+      <div class="cat-section-title reveal">🏗️ Concrete Hollow Blocks (CHB)</div>
+      <div class="cat-divider reveal"></div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.05s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/chb/chb 4.png" alt="CHB 4inch" loading="lazy">
+              <span class="product-badge badge-chb">CHB</span>
+            </div>
+            <div class="product-num">04</div>
+            <div class="product-body">
+              <div class="product-category-tag">Concrete Hollow Blocks</div>
+              <div class="product-name">CHB 4" Standard</div>
+              <p class="product-desc">Lightweight 4-inch CHB for non-load bearing interior partitions. Consistent size, excellent workability.</p>
+              <div class="product-specs">
+                <span class="spec-chip">4″ × 8″ × 16″</span>
+                <span class="spec-chip">DPWH Spec</span>
+                <span class="spec-chip">Non Load-Bearing</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Starting from</span>₱12–15 / pc</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/chb/chb 5.png" alt="CHB 6inch" loading="lazy">
+              <span class="product-badge badge-chb">CHB</span>
+            </div>
+            <div class="product-num">05</div>
+            <div class="product-body">      
+              <div class="product-category-tag">Concrete Hollow Blocks</div>
+              <div class="product-name">CHB 5" Heavy Duty</div>
+              <p class="product-desc">5 -inch load-bearing CHB engineered for exterior walls, perimeter fences, and structural applications requiring maximum strength.</p>
+              <div class="product-specs">
+                <span class="spec-chip">5″ × 8″ × 16″</span>
+                <span class="spec-chip">Load-Bearing</span>
+                <span class="spec-chip">Class A</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Starting from</span>₱20 / pc</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.15s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/chb/chb 5.png" alt="Split-Face Block" loading="lazy">
+              <span class="product-badge badge-chb">CHB</span>
+            </div>
+            <div class="product-num">06</div>
+            <div class="product-body">
+              <div class="product-category-tag">Concrete Hollow Blocks</div>
+              <div class="product-name">chb 6" Standard</div>
+              <p class="product-desc">Architectural split-face CMU block with exposed aggregate finish. Combines structural integrity with decorative aesthetics.</p>
+              <div class="product-specs">
+                <span class="spec-chip">8″ × 8″ × 16″</span>
+                <span class="spec-chip">Architectural</span>
+                <span class="spec-chip">Exposed Finish</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Starting from</span>₱20 / pc</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DECORATIVE -->
+      <div class="cat-section-title reveal">✨ Decorative Finishes — Stampcrete</div>
+      <div class="cat-divider reveal"></div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.05s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/stampcrete/4x4-slate.png" alt="Cobblestone Stamp" loading="lazy">
+              <span class="product-badge badge-stamp">Stampcrete</span>
+            </div>
+            <div class="product-num">07</div>
+            <div class="product-body">
+              <div class="product-category-tag">4x4-slate</div>
+              <div class="product-name">Cobblestone Pattern</div>
+              <p class="product-desc">Classic cobblestone texture ideal for driveways, garden paths, and outdoor entertainment areas. Slip-resistant surface.</p>
+              <div class="product-specs">
+                <span class="spec-chip">Outdoor Rated</span>
+                <span class="spec-chip">Anti-Slip</span>
+                <span class="spec-chip">UV Stable</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Per sqm rate</span>₱450–650</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/stampcrete/ashler.png" alt="Wood Plank Stamp" loading="lazy">
+              <span class="product-badge badge-stamp">Stampcrete</span>
+            </div>
+            <div class="product-num">08</div>
+            <div class="product-body">
+              <div class="product-category-tag">Ashler</div>
+              <div class="product-name">Wood Plank Finish</div>
+              <p class="product-desc">Realistic wood-plank stamped concrete for patios and pool decks. The warmth of timber without maintenance concerns.</p>
+              <div class="product-specs">
+                <span class="spec-chip">Pool-Safe</span>
+                <span class="spec-chip">Low Maintenance</span>
+                <span class="spec-chip">Realistic Grain</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Per sqm rate</span>₱500–700</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.15s">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="./uploads/stampcrete/slate.png" alt="Slate Stone Stamp" loading="lazy">
+              <span class="product-badge badge-stamp">Stampcrete</span>
+            </div>
+            <div class="product-num">09</div>
+            <div class="product-body">
+              <div class="product-category-tag">Slate Stone</div>
+              <div class="product-name">Slate Stone Overlay</div>
+              <p class="product-desc">Elegant slate-look stampcrete overlay for interior floors, commercial lobbies, and high-traffic public areas.</p>
+              <div class="product-specs">
+                <span class="spec-chip">Indoor/Outdoor</span>
+                <span class="spec-chip">High Traffic</span>
+                <span class="spec-chip">Stain Resistant</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>Per sqm rate</span>₱550–800</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AGGREGATES -->
+      <div class="cat-section-title reveal">⛏️ Construction Aggregates</div>
+      <div class="cat-divider reveal"></div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.05s">
+          <div class="product-card">
+            <div class="product-img-wrap" style="height:200px">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80" alt="Washed Sand" loading="lazy">
+              <span class="product-badge badge-sand">Aggregate</span>
+            </div>
+            <div class="product-num" style="font-size:2.8rem">10</div>
+            <div class="product-body">
+              <div class="product-category-tag">Aggregates</div>
+              <div class="product-name">Washed Sand</div>
+              <p class="product-desc">Clean, fine-graded washed sand for concrete mixing, plastering, and mortar work.</p>
+              <div class="product-specs"><span class="spec-chip">Fine Grade</span><span class="spec-chip">Washed</span></div>
+              <div class="product-footer">
+                <div class="product-price"><span>Per cubic meter</span>₱900–1,200</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.1s">
+          <div class="product-card">
+            <div class="product-img-wrap" style="height:200px">
+              <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Crushed Gravel" loading="lazy">
+              <span class="product-badge badge-gravel">Aggregate</span>
+            </div>
+            <div class="product-num" style="font-size:2.8rem">11</div>
+            <div class="product-body">
+              <div class="product-category-tag">Aggregates</div>
+              <div class="product-name">Crushed Gravel</div>
+              <p class="product-desc">G1 crushed gravel for structural concrete, road base, and drainage applications.</p>
+              <div class="product-specs"><span class="spec-chip">3/4″ & 1/2″</span><span class="spec-chip">Crushed</span></div>
+              <div class="product-footer">
+                <div class="product-price"><span>Per cubic meter</span>₱1,100–1,500</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.15s">
+          <div class="product-card">
+            <div class="product-img-wrap" style="height:200px">
+              <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80" alt="Portland Cement" loading="lazy">
+              <span class="product-badge badge-rebar">Cement</span>
+            </div>
+            <div class="product-num" style="font-size:2.8rem">12</div>
+            <div class="product-body">
+              <div class="product-category-tag">Cement & Binders</div>
+              <div class="product-name">Portland Cement</div>
+              <p class="product-desc">Type I and Type II Portland cement for general construction, foundations, and structural pours.</p>
+              <div class="product-specs"><span class="spec-chip">Type I / II</span><span class="spec-chip">40kg Bag</span></div>
+              <div class="product-footer">
+                <div class="product-price"><span>Per bag</span>₱260–310</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.2s">
+          <div class="product-card">
+            <div class="product-img-wrap" style="height:200px">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&crop=entropy&cs=tinysrgb" alt="Rebar" loading="lazy">
+              <span class="product-badge badge-rebar">Steel</span>
+            </div>
+            <div class="product-num" style="font-size:2.8rem">13</div>
+            <div class="product-body">
+              <div class="product-category-tag">Steel Reinforcement</div>
+              <div class="product-name">Deformed Rebars</div>
+              <p class="product-desc">ASTM-grade deformed steel bars for concrete reinforcement. Available in 10mm to 32mm diameter.</p>
+              <div class="product-specs"><span class="spec-chip">10–32mm</span><span class="spec-chip">Grade 60</span></div>
+              <div class="product-footer">
+                <div class="product-price"><span>Per length (6m)</span>₱320–850</div>
+                <a href="#contact" class="product-cta">Inquire <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end cat-all -->
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="features-accent"></div>
+  <div class="container position-relative">
+    <div class="row mb-5">
+      <div class="col-lg-6 reveal">
+        <div class="section-label">Why Choose Us</div>
+        <h2 class="section-title">Built on <span class="accent">Trust</span><br>& Precision</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.05s">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-medal"></i></div>
+          <div class="feature-title">Premium Quality</div>
+          <p class="feature-text">All materials comply with Philippine National Standards (PNS) and ASTM specifications, verified by our QC team.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-peso-sign"></i></div>
+          <div class="feature-title">Competitive Pricing</div>
+          <p class="feature-text">Direct supplier pricing with bulk order discounts. Maximum value without compromising on material integrity.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.15s">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+          <div class="feature-title">Fast Delivery</div>
+          <p class="feature-text">Reliable logistics covering Metro Manila and surrounding provinces. Timely delivery is our promise.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.2s">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-hard-hat"></i></div>
+          <div class="feature-title">Expert Guidance</div>
+          <p class="feature-text">Our materials specialists help you choose the right products and quantities for your specific project needs.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.25s">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-warehouse"></i></div>
+          <div class="feature-title">Large Inventory</div>
+          <p class="feature-text">Well-stocked warehouse ready for bulk orders. No waiting — your project timeline is our priority.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.3s">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <div class="feature-title">24/7 Support</div>
+          <p class="feature-text">Dedicated after-sales service and technical support from purchase to project completion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 reveal">
+        <div class="section-label">Our Work</div>
+        <h2 class="section-title">Project <span class="accent">Gallery</span></h2>
+      </div>
+      <div class="col-lg-6 d-flex align-items-end reveal">
+        <p style="font-family:var(--font-serif);color:var(--text-3);line-height:1.7">Completed projects across the Philippines featuring SKC Construction materials.</p>
+      </div>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" onclick="openLB(this)">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=85" alt="Commercial" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-label"><i class="fas fa-building"></i> Commercial Building</div></div>
+        <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLB(this)">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85" alt="Brickwork" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-label"><i class="fas fa-th-large"></i> Brickstone Feature Wall</div></div>
+        <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLB(this)">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=85" alt="Stampcrete" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-label"><i class="fas fa-square"></i> Stampcrete Finish</div></div>
+        <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLB(this)">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=85" alt="CHB Wall" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-label"><i class="fas fa-layer-group"></i> CHB Residential</div></div>
+        <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" onclick="openLB(this)">
+        <img src="https://images.unsplash.com/photo-1545486332-9e0999c535b2?w=600&q=85" alt="Driveway" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-label"><i class="fas fa-road"></i> Stampcrete Driveway</div></div>
+        <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Request a <span class="accent">Quote</span></h2>
+      </div>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-5 reveal-left">
+        <div class="contact-card">
+          <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><div class="c-label">Address</div><div class="c-value">Metro Manila, Philippines</div></div>
+        </div>
+        <div class="contact-card">
+          <div class="c-icon"><i class="fas fa-phone"></i></div>
+          <div><div class="c-label">Phone</div><div class="c-value">+63 (0) 917 XXX XXXX</div></div>
+        </div>
+        <div class="contact-card">
+          <div class="c-icon"><i class="fas fa-envelope"></i></div>
+          <div><div class="c-label">Email</div><div class="c-value">info@skcconstruction.ph</div></div>
+        </div>
+        <div class="contact-card">
+          <div class="c-icon"><i class="fas fa-clock"></i></div>
+          <div><div class="c-label">Business Hours</div><div class="c-value">Mon–Sat: 8:00 AM – 6:00 PM</div></div>
+        </div>
+        <div class="mt-4 p-4" style="background:var(--steel-xlt);border:1.5px solid rgba(42,84,119,.2);border-radius:8px">
+          <div style="font-family:var(--font-display);font-size:1.2rem;color:var(--steel);margin-bottom:8px">Ready to Build?</div>
+          <p style="font-family:var(--font-serif);color:var(--text-2);font-size:.96rem;line-height:1.65;margin:0">Fill out the form and our team responds within 24 hours with pricing and availability.</p>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <div class="form-wrap">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="float-group">
+                <input type="text" class="float-input" placeholder="Name" id="name">
+                <label class="float-label" for="name">Your Name</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="float-group">
+                <input type="email" class="float-input" placeholder="Email" id="email">
+                <label class="float-label" for="email">Email Address</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="float-group">
+                <input type="tel" class="float-input" placeholder="Phone" id="phone">
+                <label class="float-label" for="phone">Phone Number</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="float-group">
+                <input type="text" class="float-input" placeholder="Product" id="prod">
+                <label class="float-label" for="prod">Product Interest</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="float-group">
+                <textarea class="float-textarea" placeholder="Message" id="msg"></textarea>
+                <label class="float-label" for="msg">Project Details</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn-submit" id="submitBtn">
+                <span>Send Message</span><i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-logo"><span>SKC</span> Construction</div>
+        <div class="footer-tagline">"Your Finish Solution"</div>
+        <p style="font-family:var(--font-serif);color:rgba(255,255,255,.4);font-size:.88rem;line-height:1.75;max-width:300px">Premium construction materials trusted by builders across the Philippines.</p>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="footer-title">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#features">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="footer-title">Products</div>
+        <ul class="footer-links">
+          <li><a href="#products">Brickstones</a></li>
+          <li><a href="#products">CHB Hollow Blocks</a></li>
+          <li><a href="#products">Stampcrete Finishes</a></li>
+          <li><a href="#products">Aggregates & Sand</a></li>
+          <li><a href="#products">Cement & Rebars</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="footer-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-phone me-2" style="color:var(--yellow)"></i>+63 917 XXX XXXX</a></li>
+          <li><a href="#"><i class="fas fa-envelope me-2" style="color:var(--yellow)"></i>info@skcconstruction.ph</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt me-2" style="color:var(--yellow)"></i>Metro Manila, PH</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div class="footer-copy">© 2025 SKC Construction. All rights reserved.</div>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-viber"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+/* LOADER */
+window.addEventListener('load',()=>{
+  const l=document.getElementById('loader');
+  l.classList.add('done');
+  setTimeout(()=>l.style.display='none',3600);
+});
+
+/* CURSOR */
+const cur=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function anim(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(anim)})();
+document.querySelectorAll('a,button,.product-card,.gallery-item,.feature-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';ring.style.width='52px';ring.style.height='52px';ring.style.borderColor='rgba(42,84,119,.5)'});
+  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='36px';ring.style.height='36px';ring.style.borderColor='rgba(42,84,119,.35)'});
+});
+
+/* NAVBAR */
+const nav=document.getElementById('navbar');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+
+/* SCROLL REVEAL */
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+
+/* COUNTERS */
+const cobs=new IntersectionObserver(entries=>entries.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const t=parseInt(e.target.dataset.count),step=Math.ceil(t/55);let c=0;
+  const timer=setInterval(()=>{c=Math.min(c+step,t);e.target.textContent=c+'+';if(c>=t)clearInterval(timer)},22);
+  cobs.unobserve(e.target);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(c=>cobs.observe(c));
+
+/* PARTICLES */
+const cv=document.getElementById('pcv'),ctx=cv.getContext('2d');
+function resize(){cv.width=innerWidth;cv.height=innerHeight}resize();
+window.addEventListener('resize',resize);
+const pts=Array.from({length:55},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.8+.4,vx:(Math.random()-.5)*.25,vy:-(Math.random()*.4+.15),a:Math.random()*.3+.08,c:Math.random()>.5?'42,84,119':'200,184,154'}));
+(function ap(){ctx.clearRect(0,0,cv.width,cv.height);pts.forEach(p=>{ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(${p.c},${p.a})`;ctx.fill();p.x+=p.vx;p.y+=p.vy;if(p.y<-5){p.y=cv.height+5;p.x=Math.random()*cv.width}if(p.x<-5)p.x=cv.width+5;if(p.x>cv.width+5)p.x=-5});requestAnimationFrame(ap)})();
+
+/* CATEGORY TABS */
+document.querySelectorAll('.cat-tab').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    document.querySelectorAll('.cat-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    const cat=tab.dataset.cat;
+    // For this implementation all products show in 'all', tabs filter by scrolling to sub-section
+    // Show the all cat-section always (products are already grouped inside)
+    document.querySelectorAll('.cat-section').forEach(s=>s.classList.remove('active'));
+    document.getElementById('cat-all').classList.add('active');
+    // Scroll to relevant category header
+    const headers=document.querySelectorAll('.cat-section-title');
+    const map={masonry:0,concrete:1,decorative:2,aggregate:3};
+    if(cat!=='all'&&map[cat]!==undefined){
+      headers[map[cat]]?.scrollIntoView({behavior:'smooth',block:'start'});
+    } else {
+      document.getElementById('products').scrollIntoView({behavior:'smooth'});
+    }
+  });
+});
+
+/* LIGHTBOX */
+function openLB(el){
+  const img=el.querySelector('img');
+  document.getElementById('lb-img').src=img.src.replace(/w=\d+/,'w=1400');
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+document.getElementById('lb-close').addEventListener('click',closeLB);
+document.getElementById('lightbox').addEventListener('click',e=>{if(e.target===document.getElementById('lightbox'))closeLB()});
+function closeLB(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow=''}
+
+/* FORM */
+document.getElementById('submitBtn').addEventListener('click',function(){
+  const n=document.getElementById('name').value.trim(),em=document.getElementById('email').value.trim();
+  if(!n||!em)return;
+  this.innerHTML='<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+  setTimeout(()=>{
+    this.innerHTML='<span>Message Sent!</span><i class="fas fa-check"></i>';
+    this.style.background='#1E7A4A';
+    setTimeout(()=>{
+      this.innerHTML='<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+      this.style.background='';
+      ['name','email','phone','prod','msg'].forEach(id=>document.getElementById(id).value='');
+    },3000);
+  },1800);
+});
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+    const col=document.getElementById('navMenu');
+    if(col.classList.contains('show'))bootstrap.Collapse.getInstance(col)?.hide();
+  });
+});
+</script>
+</body>
+</html>
